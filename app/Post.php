@@ -4,6 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Post
+ *
+ * @property-write mixed $title
+ * @mixin \Eloquent
+ */
 class Post extends Model
 {
 

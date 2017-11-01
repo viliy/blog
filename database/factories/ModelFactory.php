@@ -10,7 +10,12 @@
 $factory->define(App\Post::class, function ($faker) {
     return [
         'title' => $faker->sentence(mt_rand(3, 10)),
-        'content' => join("\n\n", $faker->paragraphs(mt_rand(3, 6))),
+        'subtitle' => $faker->sentence(mt_rand(10, 20)),
+        'content_raw' => join("\n\n", $faker->paragraphs(mt_rand(3, 6))),
+        'content_html' => '',
+        'page_image' => '',
+        'meta_description' => '',
+        'is_draft' => 1,
         'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
     ];
 });
