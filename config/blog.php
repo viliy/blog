@@ -7,6 +7,6 @@
  * Email: 34485431@qq.com
  */
 return [
-    'title' => 'My Blog',
+    'title' => 'My Dekus',
     'posts_per_page' => 5
 ];
