@@ -15,12 +15,10 @@
 //    return view('welcome');
 //});
 
-Route::get('/', function () {
-    return redirect('/blog');
-});
+Route::get('/', 'BlogController@index');
 
-Route::get('blog', 'BlogController@index');
-Route::get('blog/{slug}', 'BlogController@showPost');
+Route::get('dekus', 'BlogController@index');
+Route::get('dekus/{slug}', 'BlogController@showPost');
 
 // Admin area
 Route::get('admin', function () {
