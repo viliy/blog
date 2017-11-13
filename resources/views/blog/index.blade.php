@@ -29,12 +29,15 @@
             <el-aside width="400px">{{ config('blog.title') }}</el-aside>
             <el-container>
                 <el-header>{{ config('blog.title') }}</el-header>
-                <el-main>dekus</el-main>
+                <el-main>
+                    1111{!! $posts->render() !!}
+                </el-main>
                 <el-footer>Footer</el-footer>
             </el-container>
         </el-container>
     </template>
 </div>
+{!! $posts->render() !!}
 <style>
     .el-header, .el-footer {
         background-color: #B3C0D1;
